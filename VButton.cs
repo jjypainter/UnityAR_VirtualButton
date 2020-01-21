@@ -21,13 +21,13 @@ public class VButton : MonoBehaviour, IVirtualButtonEventHandler
 
     public void OnButtonPressed(VirtualButtonBehaviour vb){
         Debug.Log("OnButtonPressed: " + vb.VirtualButtonName);
-        GetComponentInChildren<Animator>().SetBool("isAtteck", true);
+        GetComponentInChildren<Animator>().SetBool("isAttack", true);
         //warning.SetActive(true);
     }
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
         Debug.Log("OnButtonReleased: " + vb.VirtualButtonName);
-        GetComponentInChildren<Animator>().SetBool("isAtteck", false);
+        GetComponentInChildren<Animator>().SetBool("isAttack", false);
     }
 
     // Update is called once per frame
